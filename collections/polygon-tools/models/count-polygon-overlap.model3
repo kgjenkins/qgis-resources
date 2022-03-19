@@ -533,7 +533,14 @@
     <Option name="polygons" type="QString" value="Buffered_0e0a2dc0_763f_4554_93ef_dfce68adbf42"/>
   </Option>
   <Option name="groupBoxes"/>
-  <Option name="help"/>
+  <Option name="help" type="Map">
+    <Option name="ALG_CREATOR" type="QString" value="Keith Jenkins"/>
+    <Option name="ALG_DESC" type="QString" value="Given a set of overlapping polygons (like species ranges), this model outputs a layer of polygons with a count of how many input polygons overlap in each area."/>
+    <Option name="ALG_HELP_CREATOR" type="QString" value=""/>
+    <Option name="ALG_VERSION" type="QString" value="0.1"/>
+    <Option name="HELP_URL" type="QString" value=""/>
+    <Option name="native:renametablefield_1:count_polygon_overlap" type="QString" value=""/>
+  </Option>
   <Option name="modelVariables"/>
   <Option name="model_group" type="QString" value=""/>
   <Option name="model_name" type="QString" value="Count Polygon Overlap"/>

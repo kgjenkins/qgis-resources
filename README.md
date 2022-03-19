@@ -19,7 +19,16 @@ Given a set of overlapping polygons (like species ranges), this model outputs a 
 
 # Raster Styles
 
-The following styles provide colors and detailed legend labels for specific datasets.
+The following styles provide colors and detailed legend labels for specific datasets.  Here's how to use these .qml files in QGIS:
+
+* Open the Layer Styling panel for the layer you want to style
+* Click the "Style Manager" tab (on the left of the panel, 4th tab from the top)
+* Click the "Load Style" button (folder icon)
+* Select and open the .qml file you wish to use
+* Switch back to the "Symbology" tab (on the left the panel, 1st tab at top)
+* Click the "Apply" button at bottom right of the panel
+
+![qml](https://user-images.githubusercontent.com/3355358/158465293-68c0d68b-b375-4f5e-adfb-874400df7963.gif)
 
 ## GlobCover
 

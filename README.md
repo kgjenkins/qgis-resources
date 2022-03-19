@@ -31,7 +31,7 @@ The following styles provide colors and detailed legend labels for specific data
 
 ## USDA Cropland Data Layer
 
-![image](https://user-images.githubusercontent.com/3355358/159135320-4fd3fc52-9c24-4fc2-97cf-cf44fa329313.png)
+![image](https://user-images.githubusercontent.com/3355358/159135908-eb113062-bfbd-4b7a-9cdd-2f73c851d48a.png)
 
 ## Raster Aspect
 

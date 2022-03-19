@@ -53,8 +53,8 @@
       </Option>
       <Option name="component_description" type="QString" value="Create spatial index"/>
       <Option name="component_height" type="double" value="30"/>
-      <Option name="component_pos_x" type="double" value="424.0000000000002"/>
-      <Option name="component_pos_y" type="double" value="107.59999999999991"/>
+      <Option name="component_pos_x" type="double" value="501.0000000000002"/>
+      <Option name="component_pos_y" type="double" value="135.5999999999999"/>
       <Option name="component_width" type="double" value="200"/>
       <Option name="dependencies"/>
       <Option name="id" type="QString" value="native:createspatialindex_3"/>
@@ -62,6 +62,71 @@
       <Option name="outputs_collapsed" type="bool" value="true"/>
       <Option name="parameters_collapsed" type="bool" value="true"/>
       <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:fieldcalculator_1"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:fieldcalculator_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="native:fieldcalculator"/>
+      <Option name="color" type="QString" value=""/>
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="1248.0000000000002"/>
+        <Option name="component_pos_y" type="double" value="616.5999999999999"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
+      </Option>
+      <Option name="component_description" type="QString" value="Field calculator"/>
+      <Option name="component_height" type="double" value="30"/>
+      <Option name="component_pos_x" type="double" value="384.0000000000002"/>
+      <Option name="component_pos_y" type="double" value="59.59999999999991"/>
+      <Option name="component_width" type="double" value="200"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="native:fieldcalculator_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="FIELD_LENGTH" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_NAME" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="overlaptempid"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_PRECISION" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_TYPE" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="FORMULA" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="$id"/>
+          </Option>
+        </Option>
         <Option name="INPUT" type="List">
           <Option type="Map">
             <Option name="parameter_name" type="QString" value="polygons"/>
@@ -75,7 +140,7 @@
       <Option name="alg_config" type="Map">
         <Option name="outputs" type="List">
           <Option type="Map">
-            <Option name="expression" type="QString" value="&quot;id_unique&quot; is not null"/>
+            <Option name="expression" type="QString" value="&quot;overlaptempid_unique&quot; is not null"/>
             <Option name="isModelOutput" type="bool" value="false"/>
             <Option name="name" type="QString" value="overlap"/>
           </Option>
@@ -319,7 +384,7 @@
         <Option name="FIELD" type="List">
           <Option type="Map">
             <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="QString" value="id_unique"/>
+            <Option name="static_value" type="QString" value="overlaptempid_unique"/>
           </Option>
         </Option>
         <Option name="INPUT" type="List">
@@ -385,8 +450,10 @@
         </Option>
         <Option name="JOIN_FIELDS" type="List">
           <Option type="Map">
-            <Option name="parameter_name" type="QString" value="polygonid"/>
-            <Option name="source" type="int" value="0"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="StringList">
+              <Option type="QString" value="overlaptempid"/>
+            </Option>
           </Option>
         </Option>
         <Option name="PREDICATE" type="List">
@@ -450,7 +517,7 @@
     </Option>
   </Option>
   <Option name="designerParameterValues" type="Map">
-    <Option name="fieldnametousefortheoverlapcount" type="QString" value="c"/>
+    <Option name="fieldnametousefortheoverlapcount" type="QString" value="aoeu"/>
     <Option name="native:renametablefield_1:count_polygon_overlap" type="QgsProcessingOutputLayerDefinition">
       <Option type="Map">
         <Option name="create_options" type="Map">
@@ -463,7 +530,6 @@
         </Option>
       </Option>
     </Option>
-    <Option name="polygonid" type="QString" value="id"/>
     <Option name="polygons" type="QString" value="Buffered_0e0a2dc0_763f_4554_93ef_dfce68adbf42"/>
   </Option>
   <Option name="groupBoxes"/>
@@ -496,20 +562,6 @@
       <Option name="parameter_type" type="QString" value="sink"/>
       <Option name="supports_append" type="bool" value="true"/>
       <Option name="supports_non_file_outputs" type="bool" value="true"/>
-    </Option>
-    <Option name="polygonid" type="Map">
-      <Option name="allow_multiple" type="bool" value="false"/>
-      <Option name="data_type" type="int" value="-1"/>
-      <Option name="default" type="invalid"/>
-      <Option name="defaultGui" type="invalid"/>
-      <Option name="default_to_all_fields" type="bool" value="false"/>
-      <Option name="description" type="QString" value="Field containing unique values"/>
-      <Option name="flags" type="int" value="0"/>
-      <Option name="help" type="QString" value=""/>
-      <Option name="metadata"/>
-      <Option name="name" type="QString" value="polygonid"/>
-      <Option name="parameter_type" type="QString" value="field"/>
-      <Option name="parent_layer" type="QString" value="polygons"/>
     </Option>
     <Option name="polygons" type="Map">
       <Option name="data_types" type="List">
@@ -551,27 +603,6 @@
       <Option name="name" type="QString" value="fieldnametousefortheoverlapcount"/>
       <Option name="outputs_collapsed" type="bool" value="true"/>
       <Option name="parameters_collapsed" type="bool" value="true"/>
-    </Option>
-    <Option name="polygonid" type="Map">
-      <Option name="color" type="QString" value=""/>
-      <Option name="comment" type="Map">
-        <Option name="color" type="QString" value=""/>
-        <Option name="component_description" type="QString" value=""/>
-        <Option name="component_height" type="double" value="30"/>
-        <Option name="component_pos_x" type="double" value="0"/>
-        <Option name="component_pos_y" type="double" value="0"/>
-        <Option name="component_width" type="double" value="200"/>
-        <Option name="outputs_collapsed" type="bool" value="false"/>
-        <Option name="parameters_collapsed" type="bool" value="false"/>
-      </Option>
-      <Option name="component_description" type="QString" value="polygonid"/>
-      <Option name="component_height" type="double" value="30"/>
-      <Option name="component_pos_x" type="double" value="443.99999999999994"/>
-      <Option name="component_pos_y" type="double" value="29.40000000000002"/>
-      <Option name="component_width" type="double" value="200"/>
-      <Option name="name" type="QString" value="polygonid"/>
-      <Option name="outputs_collapsed" type="bool" value="false"/>
-      <Option name="parameters_collapsed" type="bool" value="false"/>
     </Option>
     <Option name="polygons" type="Map">
       <Option name="color" type="QString" value=""/>

@@ -7,7 +7,9 @@ QGIS styles and models by Keith Jenkins
 
 Given a set of adjacent polygons, this model outputs a layer of border lines for each unique pair of polygons that share a border.
 
-https://user-images.githubusercontent.com/3355358/159108812-af8b3ead-8a38-44d0-91b2-6c6957e73e25.mp4
+https://user-images.githubusercontent.com/3355358/208189801-a10a6bc5-4c02-4a18-8c86-f1ad4ab73a4d.mp4
+
+
 
 ## Count Polygon Overlap
 

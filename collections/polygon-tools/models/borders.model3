@@ -486,7 +486,7 @@
   <Option name="groupBoxes"/>
   <Option name="help" type="Map">
     <Option name="ALG_CREATOR" type="QString" value="Keith Jenkins"/>
-    <Option name="ALG_DESC" type="QString" value="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;/head>&lt;body>&#xa;&lt;p>Given a set of adjacent polygons, this model outputs a &amp;quot;borders&amp;quot; layer containing lines for each unique pair of polygons that share a border.&lt;/p>&#xa;&lt;p>It will also output a &amp;quot;non-borders&amp;quot; containing lines that have no neighbor.&lt;/p>&lt;/body>&lt;/html>"/>
+    <Option name="ALG_DESC" type="QString" value="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;/head>&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:10pt; font-weight:400; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>Given a set of adjacent polygons, this model outputs a &amp;quot;borders&amp;quot; layer containing lines for each unique pair of polygons that share a border.&lt;/p>&#xa;&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>It will also output a &amp;quot;non-borders&amp;quot; layer containing lines that have no neighbor.&lt;/p>&lt;/body>&lt;/html>"/>
     <Option name="ALG_HELP_CREATOR" type="QString" value=""/>
     <Option name="ALG_VERSION" type="QString" value="0.3"/>
     <Option name="EXAMPLES" type="QString" value=""/>
@@ -496,7 +496,7 @@
   <Option name="internal_version" type="QString" value="Version1"/>
   <Option name="modelVariables"/>
   <Option name="model_group" type="QString" value=""/>
-  <Option name="model_name" type="QString" value="Borders"/>
+  <Option name="model_name" type="QString" value="borders"/>
   <Option name="parameterDefinitions" type="Map">
     <Option name="borderpolygonidfield" type="Map">
       <Option name="allow_multiple" type="bool" value="false"/>

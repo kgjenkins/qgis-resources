@@ -7,13 +7,12 @@ QGIS models and styles by Keith Jenkins
 
 Given a set of adjacent polygons, this model outputs a layer of border lines for each unique pair of polygons that share a border.
 
-https://user-images.githubusercontent.com/3355358/208189801-a10a6bc5-4c02-4a18-8c86-f1ad4ab73a4d.mp4
-
+https://github.com/kgjenkins/qgis-resources/assets/3355358/6cd096d7-a388-4cef-af0c-8820dc37b93e
 
 
 ## Count Polygon Overlap
 
-Given a set of overlapping polygons (like species ranges), this model outputs a layer of polygons with a count of how many input polygons overlap there
+Given a set of overlapping polygons (like species ranges), this model outputs a layer of polygons with a count of how many input polygons overlap there.
 
 ![image](https://user-images.githubusercontent.com/3355358/159135032-515a8e10-7afb-4980-bbe3-d98d1518e0c8.png)
 

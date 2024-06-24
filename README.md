@@ -43,6 +43,10 @@ The following styles provide colors and detailed legend labels for specific data
 
 ![image](https://user-images.githubusercontent.com/3355358/159135908-eb113062-bfbd-4b7a-9cdd-2f73c851d48a.png)
 
+## USGS GAP/Landfire
+
+![image](https://github.com/kgjenkins/qgis-resources/assets/3355358/af95e48e-9c0b-44f7-92ea-f8f845f87108)
+
 ## Raster Aspect
 
 This style provides a smoothly wrapping spectrum of colors for values 0 - 360, where the color for 0 and 360 are the same:
